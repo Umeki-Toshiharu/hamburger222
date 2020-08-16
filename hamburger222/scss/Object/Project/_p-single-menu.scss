@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* single-PC.scssにimport*/
+.container_cheeseburger {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.container_cheeseburger1 {
+    display: flex;
+    justify-content: space-around;
+    margin: (5% 7% 5% 7%);
+
+    .unit1 {
+        padding-left: 5%;
+
+        .text1 {
+            height: 50%;
+            font-size: 0.5vw;
+
+            @include mq (sm) {
+                height: 150%;
+                overflow: hidden;
+            }
+        }
+
+        .text2 {
+            height: 50%;
+        }
+        
+    }
+
+    img {
+        width: 45%;
+        height: auto;
+    }
+
+    @include mq (ipad) {
+        margin-bottom: 30%;
+    }
+
+    @include mq (sm) {
+        max-height: 89px;
+    }
+}
+
+.container_cheeseburger2 {
+    display: flex;
+    justify-content: space-around;
+    margin: (5% 7% 5% 7%);
+
+    .unit2 {
+        padding-right: 5%;
+
+        .text3 {
+            height: 50%;
+            font-size: 0.5vw;
+
+            @include mq (sm) {
+                height: 150%;
+                overflow: hidden;
+            }
+        }
+
+        .text4 {
+            height: 50%;
+        }
+        
+    }
+
+    img {
+        width: 45%;
+        height: auto;
+    }
+
+    @include mq (ipad) {
+        margin-bottom: 15%;
+    }
+
+    @include mq (sm) {
+        max-height: 89px;
+        margin-bottom: 30%;
+    }
+}
+
+.image {
+    text-align: center;
+
+    @include mq (ipad) {
+        margin-bottom: 20%;
+    }
+
+    img {
+        @include mq (sm) {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            height: auto;
+        }
+    }
+    
+}
+
+.container-cheeseburger {
+    margin: (5% 5% 5% 7%);
+
+    .container_cheeseburger3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        img {
+            width: calc(100%/3);
+            text-align: center;
+            height: auto;
+            padding-right: 2%;
+            padding-bottom: 2%;
+            overflow: hidden;
+
+            @include mq (ipad) {
+                display: flex;
+                width: 50%;
+                text-align: center;
+                height: auto;
+                overflow: hidden;
+            }
+
+            @include mq (sm) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.list1 {
+    margin-top: 5%;
+    margin-left: 15%;
+
+    .list-ol {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+.list2 {
+    margin-top: 5%;
+    margin-left: 12%;
+
+    .list-ol {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    ol {
+        list-style: none;
+    }
+}
+
+.box {
+    background-color: #F5F5F5;
+    margin: 5% 7% 5% 7%;
+    
+
+    ul {
+        padding: 5% 0% 5% 5%;
+        list-style: none;
+    }
+
+    .box1 {
+        padding-left: 2%;
+
+    }
+}

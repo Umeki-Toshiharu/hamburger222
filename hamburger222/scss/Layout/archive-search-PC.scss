@@ -1,0 +1,15 @@
+/*レスポンシブ*/
+@import"../Foundation/f-mixin";
+
+@import "l-header";
+@import"l-sidebar";
+@import "l-footer";
+@import"l-archive-main";
+@import"../Object/project/p-layout-content";
+
+/*containerの見出しの5パターン*/
+@import"../Object/project/p-archive-container_cheese";
+@import"../Object/project/p-archive-content";
+
+/*footerの上のナンバー*/
+@import"../Object/project/p-archive-box";

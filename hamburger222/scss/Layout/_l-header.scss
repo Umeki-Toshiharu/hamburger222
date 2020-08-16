@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*haeder*/
+.page-header {
+    width: 100%;
+    height: auto;
+    background-color: #fff7ef;
+    display: flex;                  /*横並び*/
+    flex-direction: row;            /*左から右初期値*/
+    justify-content: space-between; /*両端均等*/
+    flex-wrap: wrap;                /*折り返し上から下*/
+
+    @include mq (ipad) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @include mq () {
+        display: block;
+        text-align: center;
+        height: 80%;
+    }
+
+    .logo {
+        color: rgb(154, 154, 155);
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        font-weight: 800;
+
+        @include mq () {
+            font-size: 5vw;
+        }
+
+        @include mq (sm) {
+            font-size: 6vw;
+        }
+    }
+}
+
+.total-header {
+    @include mq (ipad) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+}
+.button {
+        display: none;
+
+        @include mq (ipad) {
+            display: block;
+            padding-top: 2%;
+            padding-right: 2%;
+            background-color: #fff7ef;
+            color: rgb(154, 154, 155);
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3vw;
+            text-align: right;
+        }
+}
+
+.p-hamburger {
+    outline: none;
+    
+}
+
+
+
+.wrapper {
+        max-width: 100%;
+        /*margin: 0 auto;*/
+        margin-left: 0;
+        padding: 5% 5%;
+}
+
+    
+
+.search_container {
+    display: inline-block;
+    & input[type="search"] {
+    border: 1px solid  #707070;  /* 枠線 */
+    border-radius: 5px;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: white;  /* 背景色 */
+    width: 280px;             /* 横幅 */
+    height: 30px;           /* 高さ */
+    line-height: 1.2;        /* 行の高さ */
+    outline: 0;
+    margin-top: 5%;
+    font-family: 'FontAwesome';/*ここから下、虫眼鏡の記述*/
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+        @include mq() {
+            width: 240px;
+            height: 25x;
+        }
+
+        @include mq(sm) {
+            width: 180px;
+            height: 25px;
+        }
+    }   
+
+    & input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #F2EDE9;
+    outline : none;
+    width: 8vmax;
+    height: 30px;
+    font-size: 70%;
+
+        @include mq() {
+            width: 100px;
+            height: 30px;
+            font-size: 50%;
+        }
+
+        @include mq(sm) {
+            width: 60px;
+            height: 25px;
+            font-size: 40%;
+        }
+    }
+}
+

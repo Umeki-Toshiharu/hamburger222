@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* single-PC.scssにimport*/
+.button2 input {
+    margin: (5% 7% 5% 7%);
+    background-color: #F2EDE9;
+    font-size: 0.5vw;
+    padding: 2.5% 5% 2.5% 5%;
+    color: #3C2A10;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    height: 2.5%;
+    border: solid 1px #707070;
+
+    @include mq (sm) {
+        width: 85%;
+        height: 81px;
+        margin: (10% 7% 10% 7%);
+    }
+    
+}
+
+.tag {
+    margin: (0% 7% 20% 7%);
+}
