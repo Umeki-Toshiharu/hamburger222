@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body {
+    overflow-x: hidden;
+        
+    &.is-open {
+        position: fixed;
+        &::before {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            background:gray;
+            z-index: 1;
+            opacity: 0.5;
+        }
+    }
+
+}
+
+.sidebar {
+    width: 19%;
+    background-color: #F2EDE9;
+
+    @include mq (ipad) {
+
+        transition: all 300ms 0s ease;
+		left: 100%;
+		position      : absolute;
+		display       : flex;
+		flex-direction: column;
+		z-index       : 100;
+        overflow-y    : auto;
+        
+        
+        &.is-open {
+            transform: translateX(-180px);
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 24%;
+            height: 100%;
+            overflow-y: scroll;
+            
+        }
+    }
+
+    @include mq (sm) {
+        &.is-open {
+            transform: translateX(-112px);
+            width: 30%;
+        }
+        
+    }
+
+    .button-sidebar {
+        &.is-open {
+            transform: translateX(180px);
+            height: 100%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow-y: scroll;
+        }
+            
+    }
+    
+    .batsu {
+        display: none;
+
+        @include mq (ipad) {
+            display: block;
+            background-color: #F2EDE9;
+            font-size: 150%;
+            font-weight: bold;
+            font-family:'Roboto' , sans-serif;
+            color: #707070;
+            margin-top: 5%;
+            margin-right: 10%;
+            margin-left: auto;
+            margin-bottom: 20%;
+            outline: none;
+
+        }
+    }
+        
+    h3 {
+        padding-top: 20%;
+        padding-left: 10%;
+        font-family: 'Roboto' , sans-serif; 
+        font-size: 2vw;
+        color: #707070;
+
+        @include mq (ipad) {
+            display: none;
+        }
+    }
+
+    h4 {
+        padding-top: 20%;
+        padding-left: 15%;
+        color: #707070;
+        font-size: 1.5vw;
+
+        @include mq (ipad) {
+            padding-top: 20%;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-top: 10%;
+        padding-left: 18%;
+        padding-bottom: 10%;
+        line-height: 200%;
+        font-size: 1.3vw;
+        min-width: 1vw;
+    }
+
+    .menu-drink {
+        list-style: none;
+        padding-top: 10%;
+        padding-left: 18%;
+        padding-bottom: 60%;
+        line-height: 200%;
+        font-size: 1.3vw;
+        min-width: 1vw;
+    }
+}
+
+

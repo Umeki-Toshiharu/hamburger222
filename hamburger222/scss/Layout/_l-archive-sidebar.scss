@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*haeder*/
+.new-contents1 {/*html内のレイアウトbody全体*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto;
+}
+
+.new-contents2 {/*html内のレイアウトbodyはじめからsidebarまで*/
+    width: 81%;
+
+    @include mq () {
+        width: 100%;
+    }
+}
+
+.sidebar {
+    width: 19%;
+    background-color: #F2EDE9;
+
+    @include mq () {
+        position: absolute;
+        right: -200px;
+    }
+
+    h3 {
+        padding-top: 20%;
+        padding-left: 10%;
+        font-family: 'Roboto' , sans-serif; 
+        font-size: 2vw;
+        color: #707070;
+    }
+
+    h4 {
+        padding-top: 20%;
+        padding-left: 15%;
+        color: #707070;
+        font-size: 1.5vw;
+    }
+
+    ul {
+        list-style: none;
+        padding-top: 10%;
+        padding-left: 18%;
+        line-height: 200%;
+        font-size: 1.3vw;
+        min-width: 1vw;
+    }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* single-PC.scssにimport*/
+table {
+    border-collapse: collapse;
+    width: 86%;
+    margin-left: 7%;
+    /*margin-right: 7%;*/
+
+    tr td {
+        border: solid 1px black;
+        font-family: "M+PLUS+1p" sans-serif;
+    }
+
+    .td1 {
+        width: 35%;
+    }
+
+    td {
+        padding: 3%;
+    }
+}

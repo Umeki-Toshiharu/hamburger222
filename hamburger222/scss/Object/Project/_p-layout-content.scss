@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*haeder*/
+.new-contents1 {/*html内のレイアウトbody全体*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto;
+}
+
+.new-contents2 {/*html内のレイアウトbodyはじめからsidebarまで*/
+    width: 81%;
+
+    @include mq (ipad) {
+        width: 100%;
+    }
+}

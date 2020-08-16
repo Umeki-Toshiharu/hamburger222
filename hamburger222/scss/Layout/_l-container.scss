@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* PC_front-page.scssにimport*/
+div {
+    content: "l-container";
+}
+
+ul.content {
+    display: inline-flex;
+    justify-content: space-between;
+
+    dt {
+        font-size: 1.5vw;
+    }
+
+}
+
+.container_takeout {
+    position: relative;
+    margin: 5%;
+    margin-right: 1.5%;
+
+     h3 {
+        position: absolute;
+        color: #EAEAEA;
+        top: 11%;
+        left: 30%;
+        -ms-transform: translate(-50%,-50%); 
+        -webkit-transform: translate(-50%,-50%); 
+        transform: translate(-50%,-50%); 
+        padding-bottom:2%;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .unit1 {
+        position: absolute;
+        color: #3C2A10;
+        top: 70%;
+        left: 50%;
+        width: 90%;
+        -ms-transform: translate(-50%,-50%); 
+        -webkit-transform: translate(-50%,-50%); 
+        transform: translate(-50%,-50%); 
+        font-size: 1vw;
+        font-family: 'M+PLUS+1p', sans-serif;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: auto;
+        padding: 2%;
+        padding-bottom: 4%;
+    }
+
+    .unit2 {
+        position: absolute;
+        color: #3C2A10;
+        top: 88%;
+        left: 50%;
+        width: 90%;
+        -ms-transform: translate(-50%,-50%); 
+        -webkit-transform: translate(-50%,-50%); 
+        transform: translate(-50%,-50%); 
+        font-size: 1vw;
+        font-family: 'M+PLUS+1p', sans-serif;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: auto;
+        padding: 2%;
+        padding-bottom: 4%;
+    }
+    img[src="img/front_page-PC/take_out.jpg"] {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container_eatin {
+    position: relative;
+    margin: 5%;
+    margin-left: 1.5%;
+
+    h3 {
+       position: absolute;
+       color: white;
+       top: 11%;
+       left: 20%;
+       -ms-transform: translate(-50%,-50%); 
+       -webkit-transform: translate(-50%,-50%); 
+       transform: translate(-50%,-50%); 
+       padding:0;
+       font-size: 4vw;
+       font-family: 'Roboto', sans-serif;
+   } 
+   
+    .unit3 {
+        position: absolute;
+        color: #3C2A10;
+        top: 70%;
+        left: 50%;
+        width: 90%;
+        -ms-transform: translate(-50%,-50%); 
+        -webkit-transform: translate(-50%,-50%); 
+        transform: translate(-50%,-50%); 
+        font-size: 1vw;
+        font-family: 'M+PLUS+1p', sans-serif;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: auto;
+        padding: 2%;
+        padding-bottom: 4%;
+    }
+
+    .unit4 {
+        position: absolute;
+        color: #3C2A10;
+        top: 88%;
+        left: 50%;
+        width: 90%;
+        -ms-transform: translate(-50%,-50%); 
+        -webkit-transform: translate(-50%,-50%); 
+        transform: translate(-50%,-50%); 
+        font-size: 1vw;
+        font-family: 'M+PLUS+1p', sans-serif;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: auto;
+        padding: 2%;
+        padding-bottom: 4%;
+    }
+
+   img[src="img/front_page-PC/eat_in.jpg"] {
+    width: 100%;
+    height: auto;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .container_takeout, .container_eatin, .content {
+         display: block;
+         flex-direction: column;
+         margin: 3%;
+         width: auto;
+        
+        .unit1 {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            width: 90%;
+            height: 25%;
+            -ms-transform: translate(-50%,-50%); 
+            -webkit-transform: translate(-50%,-50%); 
+            transform: translate(-50%,-50%); 
+            font-size: 3vw;
+            background-size: auto;
+            padding: 2%;
+            padding-bottom: 4%;
+        }
+
+        .unit2 {
+            position: absolute;
+            top: 83%;
+            left: 50%;
+            width: 90%;
+            height: 25%;
+            -ms-transform: translate(-50%,-50%); 
+            -webkit-transform: translate(-50%,-50%); 
+            transform: translate(-50%,-50%); 
+            font-size: 3vw;
+            background-size: auto;
+            padding: 2%;
+            padding-bottom: 4%;
+        }
+
+        .unit1 dt {
+            font-size: 4vw;
+        }
+
+        .unit2 dt {
+            font-size: 4vw;
+        }
+
+        .unit3 {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            width: 90%;
+            height: 25%;
+            -ms-transform: translate(-50%,-50%); 
+            -webkit-transform: translate(-50%,-50%); 
+            transform: translate(-50%,-50%); 
+            font-size: 3vw;
+            background-size: auto;
+            padding: 2%;
+            padding-bottom: 4%;
+        }
+    
+        .unit4 {
+            position: absolute;
+            top: 83%;
+            left: 50%;
+            width: 90%;
+            height: 25%;
+            -ms-transform: translate(-50%,-50%); 
+            -webkit-transform: translate(-50%,-50%); 
+            transform: translate(-50%,-50%); 
+            font-size: 3vw;
+            background-size: auto;
+            padding: 2%;
+            padding-bottom: 4%;
+        }
+    
+        .unit3 dt {
+            font-size: 4vw;
+        }
+    
+        .unit4 dt {
+            font-size: 4vw;
+        }
+        
+    }
+
+    .container_takeout h3 {
+        font-size: 200%;
+        top: 10%;
+        left: 25%;
+    }
+
+    .container_eatin h3 {
+        font-size: 200%;
+        top: 10%;
+        left: 20%;
+    }
+}

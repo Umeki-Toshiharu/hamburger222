@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* archive-PC.scssにimport*/
+.img_contents {
+    position: relative;
+
+    .block1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .block2 {
+        position: absolute;
+        width: 100%;
+        height: 96%;
+        top: 0%;
+        left: 0%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+    
+    h2 {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 20%;
+        -ms-transform: translate(-50%,-50%); /*ズレ補正古いブラウザー対応*/
+        -webkit-transform: translate(-50%,-50%); /*ズレ補正古いブラウザー対応*/
+        transform: translate(-50%,-50%); /*ズレ補正*/
+        padding:0;
+        z-index: 5;
+        font-size: 4vw;
+        font-family: 'M+PLUS+1p', sans-serif;
+
+            @include mq () {
+                font-size: 5vh;
+                padding-left: 10%;
+            }
+        }
+
+    img/*[src="img/archive-PC/menu1.jpg"]*/{
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+
+        @include mq () {
+            height: 239px;
+            object-fit: cover;
+        }
+    }
+}
+
+span {
+    padding: 0%;
+    
+    @include mq () {
+        display: block;
+        padding: 0%;
+    }
+}
+
+/*@media (max-width: 640px) {
+    .img_contents {
+        position: relative;
+    
+        .block1 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            
+        }
+    
+        .block2 {
+            position: absolute;
+            width: 100%;
+            height: 97%;
+            top: 0%;
+            left: 0%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        
+        h2 {
+            position: absolute;
+            color: white;
+            top: 50%;
+            left: 20%;
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%); 
+            transform: translate(-50%,-50%);
+            padding:0;
+            z-index: 5;
+            font-size: 5vh;
+            font-family: 'M+PLUS+1p', sans-serif;
+            }
+    
+        img{
+            width: 100%;
+            height: 239px;
+            margin-top: 0%;
+            object-fit: cover;
+        }
+    }
+    
+    span {
+        display: block;
+        padding: 0%;
+    }
+}*/

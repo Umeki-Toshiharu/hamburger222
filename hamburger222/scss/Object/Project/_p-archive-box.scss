@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    .button-box {
+        border: 1px solid #707070;
+        margin-left: 0.7%;
+        margin-right: 0.7%;
+        padding: (0.2% 0.7% 0.2% 0.7%);
+        outline: none;
+    }
+
+    .button-box:hover {
+        background-color: #3C2B1C;
+        color: #ffffff;
+        border-style: none;
+    }
+
+    @include mq (sm) {
+        display: none;
+    }
+}
+
+.next {
+    display: none;
+
+    @include mq (sm) {
+        display: flex;
+        justify-content: space-between;
+        /*margin-left: 5%;
+        margin-right: 5%;*/
+        margin: 5%;
+    }
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* archive-PC.scssにimport*/
+.content {
+    margin: (5% 5% 0% 5%);
+    height: auto;
+
+    p1 {
+        font-size: 2vw;
+        padding-bottom: 5%;
+    }
+
+    p2 {
+        font-size: 1vw;
+        /*line-height: 1.5;*/
+    }
+}
+
+@media (max-width: 640px) {
+    .content {
+        margin: (5% 5% 0% 5%);
+        height: auto;
+    
+        p1 {
+            font-size: 3vw;
+            padding-bottom: 5%;
+        }
+    
+        p2 {
+            font-size: 1vw;
+        }
+    }
+}

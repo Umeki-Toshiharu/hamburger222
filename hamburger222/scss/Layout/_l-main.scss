@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* PC_front-page.scssにimport*/
+.article_contents {
+    position: relative;
+
+    h2 {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 15%;
+        -ms-transform: translate(-50%,-50%); /*ズレ補正古いブラウザー対応*/
+        -webkit-transform: translate(-50%,-50%); /*ズレ補正古いブラウザー対応*/
+        transform: translate(-50%,-50%); /*ズレ補正*/
+        padding:0;
+        font-size: 2vw;
+        font-family: 'M+PLUS+1p', sans-serif;
+
+        @include mq () {
+            left: 25%;
+            font-size: 4vw;
+        }
+
+        }
+    img {
+        width: 100%;
+        height: auto;
+
+        @include mq () {
+            height: 285px;
+            object-fit: cover;
+        }
+    }
+}
+
