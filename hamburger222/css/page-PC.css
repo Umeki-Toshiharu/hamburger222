@@ -195,26 +195,26 @@ $sp: 480px;  // スマホ
 
 body {
   overflow-x: hidden;
-}
-
-body.is-open {
-  position: fixed;
-}
-
-body.is-open::before {
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  content: '';
-  position: absolute;
-  background: gray;
-  z-index: 1;
-  opacity: 0.5;
+  /*&.is-open {
+        position: fixed;
+        &::before {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            background:gray;
+            z-index: 10;
+            opacity: 0.5;
+        }
+    }*/
 }
 
 .sidebar {
   width: 19%;
+  height: 100%;
   background-color: #F2EDE9;
 }
 
@@ -232,7 +232,7 @@ body.is-open::before {
         -ms-flex-direction: column;
             flex-direction: column;
     z-index: 100;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .sidebar.is-open {
     -webkit-transform: translateX(-180px);
@@ -241,7 +241,7 @@ body.is-open::before {
     top: 0;
     bottom: 0;
     width: 24%;
-    height: 100%;
+    height: 200%;
     overflow-y: scroll;
   }
 }
@@ -251,6 +251,7 @@ body.is-open::before {
     -webkit-transform: translateX(-112px);
             transform: translateX(-112px);
     width: 30%;
+    height: 300%;
   }
 }
 
@@ -261,7 +262,6 @@ body.is-open::before {
   right: 0;
   top: 0;
   bottom: 0;
-  overflow-y: scroll;
 }
 
 .sidebar .batsu {
@@ -335,7 +335,7 @@ body.is-open::before {
 footer {
   max-width: 100%;
   max-height: auto;
-  margin-top: 0%;
+  margin-top: auto;
   background-color: #9D8670;
 }
 
@@ -365,6 +365,7 @@ footer p2 {
   footer div {
     padding-top: 5%;
     padding-bottom: 5%;
+    max-height: auto;
   }
 }
 
@@ -460,11 +461,30 @@ span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: auto;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 .new-contents2 {
   /*html内のレイアウトbodyはじめからsidebarまで*/
   width: 81%;
+}
+
+.new-contents2.is-open {
+  position: fixed;
+  height: 100%;
+}
+
+.new-contents2.is-open::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  content: '';
+  position: absolute;
+  background: gray;
+  z-index: 10;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 780px) {

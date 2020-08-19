@@ -4,10 +4,29 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: auto;
+    overflow-x: hidden;
+    height: 100%;
+        
 }
 
 .new-contents2 {/*html内のレイアウトbodyはじめからsidebarまで*/
     width: 81%;
+
+    &.is-open {
+        position: fixed;
+        height: 100%;
+        &::before {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 300%;
+            content: '';
+            position: absolute;
+            background:gray;
+            z-index: 10;
+            opacity: 0.5;
+        }
+    }
 
     @include mq (ipad) {
         width: 100%;

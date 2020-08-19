@@ -3,8 +3,10 @@
 footer {
     max-width: 100%;
     max-height: auto;
-    margin-top: 0%;
+    margin-top: auto;
     background-color: #9D8670;
+    
+    
 
     div {
         display: flex;
@@ -25,6 +27,8 @@ footer {
         div {
             padding-top: 5%;
             padding-bottom: 5%;
+            max-height: auto;
+            
         }
     }
     
